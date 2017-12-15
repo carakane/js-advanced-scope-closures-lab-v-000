@@ -24,8 +24,3 @@ function createDriver(name){
       }
     }
   }
-
-
-// createDriver returns a function that returns a class that produces a Driver class. The class has reference to
-//  a driverId that is incremented each time a new driver is created. The rest of the code base does not have
-//   access to driverId.
