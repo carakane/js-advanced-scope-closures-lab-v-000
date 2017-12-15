@@ -17,8 +17,7 @@ function produceTipCalculator(tipPercentage) {
 
 function createDriver(name){
   let driverId = 0;
-  return function(){
-    class Driver{
+  return class Driver{
       constructor(name){
         this.name = name
         this.id = ++driverId
