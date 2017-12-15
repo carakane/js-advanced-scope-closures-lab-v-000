@@ -4,9 +4,9 @@ function produceDrivingRange(blockRange){
   }
 }
 
-function produceTipCalculator() {
-  return function(){
-    
+function produceTipCalculator(tipPercentage) {
+  return function(bill){
+    return(tipPercentage * bill)
   }
 }
 // produceDrivingRange() - Returns a function that then calculates whether a given trip is within range.
