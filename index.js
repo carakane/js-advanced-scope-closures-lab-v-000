@@ -1,7 +1,11 @@
 function produceDrivingRange(blockRange){
   return funtction(start, end){
     let distance = parsetInt(end) - parseInt(start)
-    distance >= blockRange ? `${distance - blockRange} out of range` : `within range by ${blockRange - distance}`
+    if(distance >= blockRange) {
+      return(`${distance - blockRange} out of range`)
+    } else {
+      return(`within range by ${blockRange - distance}`)
+    }
   }
 }
 
