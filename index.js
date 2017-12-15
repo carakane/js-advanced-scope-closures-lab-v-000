@@ -2,9 +2,9 @@ function produceDrivingRange(blockRange){
   return function(start, end){
     let distance = parseInt(end) - parseInt(start)
     if(distance >= blockRange) {
-      console.log(`${distance - blockRange} out of range`)
+      return(`${distance - blockRange} out of range`)
     } else {
-      console.log(`within range by ${blockRange - distance}`)
+      return(`within range by ${blockRange - distance}`)
     }
   }
 }
