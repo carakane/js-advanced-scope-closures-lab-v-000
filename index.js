@@ -7,7 +7,7 @@ function produceDrivingRange(blockRange){
       console.log(`within range by ${blockRange - distance}`)
     }
   }
-}
+
 
 function produceTipCalculator(tipPercentage) {
   return function(bill){
